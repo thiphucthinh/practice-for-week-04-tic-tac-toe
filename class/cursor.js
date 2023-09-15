@@ -8,8 +8,12 @@ class Cursor {
         this.cursorColor = "yellow";
     }
 
-    position(row, col) {
-        this.row = 0;
-        this.col = 0;
+    position(row = 0, col = 0) {
+        return {
+            row: this.row,
+            col: this.col
+        }
     }
 }
+
+module.exports = Cursor;
